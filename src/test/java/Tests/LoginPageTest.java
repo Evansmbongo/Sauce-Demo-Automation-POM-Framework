@@ -2,8 +2,10 @@ package Tests;
 
 import Pages.ItemsPage;
 import Pages.LoginPage;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,7 +18,11 @@ public class LoginPageTest {
     public static void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:/Users/EvansMbongo/Desktop/SeleniumJava/Sauce-Demo" +
                 "-Automation-POM/src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver();
+//        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
+        driver = new ChromeDriver(options);
+
         driver.get("https://www.saucedemo.com/");
     }
 
