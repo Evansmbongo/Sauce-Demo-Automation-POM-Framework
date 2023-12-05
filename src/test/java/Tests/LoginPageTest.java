@@ -13,7 +13,6 @@ import org.testng.annotations.Test;
 public class LoginPageTest {
     public static WebDriver driver;
 
-    //WebDriver driver;
     @BeforeMethod
     public static void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:/Users/EvansMbongo/Desktop/SeleniumJava/Sauce-Demo" +

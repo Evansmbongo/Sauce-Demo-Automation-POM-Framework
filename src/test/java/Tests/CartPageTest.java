@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 public class CartPageTest {
     @BeforeMethod
     public void setUp(){
+        // setting up
         ItemsPageTest itemsPageTest = new ItemsPageTest();
         itemsPageTest.setUp();
         itemsPageTest.clickItems();
