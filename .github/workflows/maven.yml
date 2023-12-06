@@ -20,6 +20,10 @@ jobs:
     - name: Clean
       run: mvn clean test
 
+    - name: Debug Chromedriver Path
+      run: echo ${{ runner.workspace }}\path\to\chromedriver.exe
+
+
     # - name: Validate
     #   run: mvn validate
 
