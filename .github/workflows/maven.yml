@@ -17,8 +17,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
         
-    - name: Clean and install
-      run: mvn clean install
+    - name: Clean
+      run: mvn clean
 
     - name: Validate
       run: mvn validate
