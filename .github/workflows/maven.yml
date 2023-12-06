@@ -17,9 +17,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Debug Chromedriver Path
-      run: echo ${{ runner.workspace }}\path\to\chromedriver.exe
-
     - name: Clean
       run: mvn clean test
 
