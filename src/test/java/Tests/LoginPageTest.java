@@ -17,7 +17,7 @@ public class LoginPageTest {
     public static void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:/Users/EvansMbongo/Desktop/SeleniumJava/Sauce-Demo" +
                 "-Automation-POM/src/main/resources/chromedriver.exe");
-        WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
         driver = new ChromeDriver(options);
