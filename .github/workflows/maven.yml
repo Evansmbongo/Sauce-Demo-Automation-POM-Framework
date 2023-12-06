@@ -30,6 +30,9 @@ jobs:
     - name: Validate
       run: mvn validate
 
+    - name: Verify
+      run: mvn verify
+
     - name: Test
       run: mvn test
 
