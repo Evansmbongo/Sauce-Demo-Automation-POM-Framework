@@ -16,9 +16,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-        
+
     - name: Clean
       run: mvn clean test
+
+  
 
     # - name: Validate
     #   run: mvn validate
