@@ -22,7 +22,7 @@ jobs:
 
   
 
-    # - name: Validate
+    ## - name: Validate
     #   run: mvn validate
 
     # - name: Verify
